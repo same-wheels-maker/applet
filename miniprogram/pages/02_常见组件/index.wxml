@@ -1,0 +1,35 @@
+<!--pages/02_常见组件/index.wxml-->
+<view>----------------input组件----------------</view>
+<input type="text" model:value="{{message}}" />
+
+<view>---------------scroll-view组件-------------</view>
+<!-- 上下滚动(y轴) -->
+<scroll-view class="scroll-y" scroll-y>
+  <block wx:for="{{viewColors}}" wx:key="this">
+    <view class="y-item" style="background: {{item}};">{{ item }} </view>
+  </block>
+</scroll-view>
+
+<!-- 左右滚动(x轴) -->
+<scroll-view 
+  class="scroll-x" 
+  enable-flex scroll-x 
+  bindscrolltoupper="onScrollToUpper"     
+  bindscrolltolower="onScrollToLower"
+  bindscroll="onScroll"
+>
+  <block wx:for="{{viewColors}}" wx:key="this">
+    <view class="x-item" style="background: {{item}};">{{ item }} </view>
+  </block>
+</scroll-view>
+
+<view>----------------button组件----------------</view>
+<button>按钮</button>
+<button size="mini" type="primary">type属性</button>
+<button size="mini" type="warn">type属性</button>
+<button size="mini" type="btn">自定义属性</button>
+
+<button size="mini" plain>plain属性</button>
+
+<view>----------------text组件------------------</view>
+<text user-select>{{ message }} </text>

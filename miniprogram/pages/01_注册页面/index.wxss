@@ -1,0 +1,9 @@
+/* pages/01_初体验/index.wxss */
+image {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  color: white;
+}

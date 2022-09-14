@@ -1,0 +1,13 @@
+<!--pages/03_learn_wxss/index.wxml-->
+
+<!-- 应用全局样式 -->
+<view class="title">learn wxss title</view>
+
+<!-- 页面中的样式 -->
+<view class="message">learn wxss message</view>
+
+<!-- 行内的样式 -->
+<view style="color: blueviolet;">inline style</view>
+
+<!-- rpx单位的使用 -->
+<view class="item"></view>

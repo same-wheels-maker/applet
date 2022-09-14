@@ -1,0 +1,29 @@
+/* pages/02_常见组件/index.wxss */
+.scroll-y {
+  background: orange;
+  height: 200px;
+}
+
+.y-item {
+  width: 100px;
+  height: 100px;
+  color: white;
+}
+
+.scroll-x {
+  background: skyblue;
+  display: flex;
+  height: 200px;
+}
+
+.x-item {
+  width: 100px;
+  height: 100px;
+  color: white;
+  flex-shrink: 0;
+}
+
+input {
+  height: 50px;
+  border: 1px solid orange;
+}
