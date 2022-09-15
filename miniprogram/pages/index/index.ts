@@ -7,7 +7,8 @@ Page({
     pages: [
       { name: '01_注册页面', path: '/pages/01_注册页面/index' },
       { name: '02_常见组件', path: '/pages/02_常见组件/index' },
-      { name: '03_学习WXSS', path: '/pages/03_learn_wxss/index' }
+      { name: '03_学习WXSS', path: '/pages/03_learn_wxss/index' },
+      { name: '04_学习WXML', path: '/pages/04_learn_wxml/index' }
     ]
   },
   onBtnClick(e) {

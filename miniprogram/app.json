@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/01_注册页面/index",
     "pages/02_常见组件/index",
-    "pages/03_learn_wxss/index"
+    "pages/03_learn_wxss/index",
+    "pages/04_learn_wxml/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
