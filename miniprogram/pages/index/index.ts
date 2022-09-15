@@ -11,7 +11,7 @@ Page({
       { name: '04_学习WXML', path: '/pages/04_learn_wxml/index' }
     ]
   },
-  onBtnClick(e) {
+  onBtnClick(e: any) {
     const _item = e.target.dataset.item
     // 跳转路径
     wx.navigateTo({

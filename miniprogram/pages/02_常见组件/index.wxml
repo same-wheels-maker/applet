@@ -23,13 +23,33 @@
   </block>
 </scroll-view>
 
-<view>----------------button组件----------------</view>
+<view>---------------image组件---------------</view>
+<!-- image元素默认宽度和高度: 320 * 240 -->
+<image src="/assets/zznh.png" mode="top right" />
+<image src="/assets/zznh.png" mode="aspectFit" />
+<image src="/assets/zznh.png" mode="widthFix" />
+
+<button bindtap="onChooseImage">选择图片</button>
+<image class="upload-image" src="{{choosedImageUrl}}" mode="widthFix" />
+
+<view>---------------view组件----------------</view>
+<view bindtap="" hover-class="active">哈哈哈</view>
+
+<view>---------------button组件---------------</view>
 <button>按钮</button>
 <button size="mini" type="primary">type属性</button>
 <button size="mini" type="warn">type属性</button>
-<button size="mini" type="btn">自定义属性</button>
+<button size="mini" class="btn">自定义属性</button>
 
 <button size="mini" plain>plain属性</button>
+<button size="mini" disabled>禁用属性</button>
+<button size="mini" loading>loading属性</button>
+<button size="mini" hover-class="active">hover效果</button>
+<view></view>
 
-<view>----------------text组件------------------</view>
+<button size="mini" type="primary" open-type="contact">打开会话</button>
+<button size="mini" type="primary" bindtap="getUserInfo">用户信息</button>
+<button size="mini" type="primary" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">手机号码</button>
+
+<view>---------------text组件-----------------</view>
 <text user-select>{{ message }} </text>

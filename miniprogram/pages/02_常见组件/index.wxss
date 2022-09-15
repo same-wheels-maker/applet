@@ -27,3 +27,16 @@ input {
   height: 50px;
   border: 1px solid orange;
 }
+
+.btn {
+  background: orange;
+  color: white;
+}
+
+.active {
+  background: skyblue;
+}
+
+.upload-image {
+  width: 100%;
+}
