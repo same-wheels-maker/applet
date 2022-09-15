@@ -1,2 +1,39 @@
 <!--pages/04_learn_wxml/index.wxml-->
-<text>pages/04_learn_wxml/index.wxml</text>
+<!-- Mustache语法 -->
+<view>{{ message }}</view>
+<view>{{ firstname + " " + lastname }}</view>
+<view>{{ date }}</view>
+
+<!-- 条件判断 -->
+<view wx:if="{{score > 90}}">优秀</view>
+<view wx:elif="{{score > 80}}">良好</view>
+<view wx:elif="{{score >= 60}}">及格</view>
+<view wx:else>不及格</view>
+
+<!-- hidden属性 -->
+<view hidden>我是Hidden的view</view>
+
+<!-- wx:for基本使用 -->
+<view class="books">
+  <view wx:for="{{books}}" wx:key="id">
+  <!--  item: 每项内容, index: 每项索引 -->
+  {{ item.name }} - {{ item.price }}
+  </view>
+</view>
+
+<!-- 遍历数字 -->
+<view class="number">
+  <view wx:for="{{10}}" wx:key="this">{{ item }} </view>
+</view>
+
+<!-- 遍历字符串 -->
+<view class="str">
+  <view wx:for="x_qi" wx:key="this">{{ item }}</view>
+</view>
+
+<!-- 细节补充：block-item/index名称 -->
+<view class="books">
+  <block wx:for="{{books}}" wx:key="id" wx:for-item="book" wx:for-index="i">
+    <view>{{i}} - {{ book.name }}</view>
+  </block>
+</view>

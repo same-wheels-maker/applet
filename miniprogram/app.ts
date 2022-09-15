@@ -19,5 +19,5 @@ App<IAppOption>({
     // 将获取到的数据登录数据保存到globalData中
     this.globalData.token = _token
     this.globalData.userInfo = _userInfo
-  },
+  }
 })
