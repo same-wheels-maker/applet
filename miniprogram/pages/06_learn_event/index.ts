@@ -29,5 +29,30 @@ Page({
     this.setData({
       currentIndex: event.currentTarget.dataset?.index ?? 0
     })
+  },
+
+  /**
+   * 捕获和冒泡过程
+   */
+  onView1CaptureTap() {
+    console.log('onView1CaptureTap')
+  },
+  onView2CaptureTap() {
+    console.log('onView2CaptureTap')
+  },
+  onView3CaptureTap() {
+    console.log('onView3CaptureTap')
+  },
+  onView1Tap() {
+    console.log('onView1Tap')
+  }, 
+  onView2Tap() {
+    console.log('onView2Tap')
+  },
+  onView3Tap() {
+    console.log('onView3Tap')
+  },
+  onMarkTap(event: any) {
+    console.log(event.mark)
   }
 })

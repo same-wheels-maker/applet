@@ -25,3 +25,15 @@
     </view>
   </block>
 </view>
+
+<!-- 捕获和冒泡阶段 -->
+<view class="view1" capture-bind:tap="onView1CaptureTap" bindtap="onView1Tap">
+  <view class="view2" capture-bind:tap="onView2CaptureTap" bindtap="onView2Tap">
+    <view class="view3" capture-bind:tap="onView3CaptureTap" bindtap="onView3Tap"></view>
+  </view>
+</view>
+
+<!-- 给逻辑传递数据，另外一种方式：mark -->
+<view class="mark" mark:name="x_qi" mark:age="30" bindtap="onMarkTap">
+  <text class="mark-text">mark</text>
+</view>
