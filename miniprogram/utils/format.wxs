@@ -1,0 +1,12 @@
+function formatPrice(price) {
+  return '￥' + price
+}
+
+function padLeft(time) {
+ return ('00' + time).slice(time.length)
+}
+
+// 必须导出后，才能被其它地方调用：必须使用CommonJS导出
+module.exports = {
+  formatPrice: formatPrice
+}

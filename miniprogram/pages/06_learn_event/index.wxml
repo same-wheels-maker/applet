@@ -1,0 +1,27 @@
+<!--pages/06_learn_event/index.wxml-->
+<!-- 事件的基本是使用 -->
+<button bindtap="onBtnTap">轻敲</button>
+
+<!-- event中的target和currentTarget的区别 -->
+<view class="outer" id="outer" bindtap="onOuterTap">
+  <view class="inner" id="inner"></view>
+</view>
+
+<!-- event中的touches和changeTouches区别 -->
+<view class="touchs" bindtap="onTouchTap" bindlongpress="onLongPress" bindtouchend="onTouchEnd">多指触摸</view>
+
+<!-- event的参数传递 -->
+<view class="arguments" bindtap="onArgsTap" data-name="x_qi" data-age="29" data-height="1.78">参数传递</view>
+
+<!-- tab-control案例 -->
+<view class="tab-control">
+  <block wx:for="{{titles}}" wx:key="*this">
+    <view 
+    class="item {{index === currentIndex ? 'item-active' : ''}}" 
+    bindtap="onItemTap" 
+    data-index="{{index}}"
+    >
+      <text class="item-text">{{ item }}</text>
+    </view>
+  </block>
+</view>

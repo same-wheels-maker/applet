@@ -1,0 +1,6 @@
+/* pages/learn_wxs/index.wxss */
+.count {
+  font-size: 40rpx;
+  font-weight: 700;
+  color: coral
+}
