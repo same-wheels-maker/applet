@@ -1,1 +1,12 @@
 /* pages/07_learn_component/index.wxss */
+.title {
+  background: skyblue;
+}
+
+.abc {
+  background: #0f0;
+}
+
+.cba {
+  background: #00f;
+}

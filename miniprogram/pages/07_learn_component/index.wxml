@@ -1,2 +1,8 @@
 <!--pages/07_learn_component/index.wxml-->
-<section-info />
+<section-info info="abc" title="我与地坛" content="忘记了" bind:titleClick="onSectionTitleClick" />
+<section-info info="cba" title="黄金时代" content="在我一生中" />
+
+<test-style />
+<view class="title">我是页面的title</view>
+
+<tab-control titles="{{titles}}" bind:indexChanged="onTabIndexChange" />

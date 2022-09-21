@@ -1,4 +1,1 @@
 /* components/section-info/index.wxss */
-text {
-  color: red;
-}
